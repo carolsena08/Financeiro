@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAINEL FINANCEIRO</title>
+
+    <style>
+#logo{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+body{
+    background-color: #fff4df;
+}
+
+#f1, #f2{
+    color: black;
+}
+
+header{
+    color: #fff4df;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-size: larger;
+    position: relative;
+    top: 20px;
+}
+nav{
+    background-color: #59C631;
+    border-radius: 0px 0px 40px 40px;
+    padding: -5px;
+}
+#img-money{
+    margin-top: -30px;
+}
+#nav2{
+    border-radius: 40px 40px 40px 40px;
+    margin: 4px;
+    margin-right: 980px;  
+    margin-top: 5px;
+}
+h2{
+    color: black;
+    margin-left: 20px;
+}
+.quadrado{
+    background-color:white;
+    padding: 80px;
+    height: 700px;
+    width: 1170px;
+    border-radius: 40px;
+    margin-top: -15px;
+    display: flex; 
+    gap: 20px; 
+}
+.quadrado h1{
+    color: gray;
+    margin: 40px;
+    margin-top: -20px;
+    margin-right: 1500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.quadrado h2{
+    margin: 20px;
+    margin-top: -70px;
+    color: grey;
+    margin-left: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+.quadrado h3{
+    color: gray;
+    margin: 50px;
+    margin-left: 730px;
+    margin-right: -300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    margin-top: -50px;
+    
+}
+.quadrado form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+}
+
+.form.tudo{
+    margin: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.form.tudo h1{
+    position: absolute;
+    
+}
+#resposta{
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+#DATA{
+    height: 30px;
+
+}
+#relato{
+    margin-left: -70px;
+}
+.caixa{
+    background-color: #b9e5a9;
+    padding: 60px;
+    margin-left: 550px;
+    margin-top: -180px;
+    height: 300px;
+    width: 550px;
+    border-radius: 30px;
+    border:5px solid #477506;
+    display: flex;
+    gap: 20px;
+    
+}
+.caixa h1{
+    color: gray;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.container{
+    margin-top: 110px;
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 440px;
+    right: 25px;
+    
+}
+.container2{
+    margin: 100px 0 0 -530px;
+    display: flex;
+    gap: 30px;
+    margin-left: -540px;
+}
+#linha-vertical{
+    position: absolute;
+    background-color: gray;
+    width: 3px;
+    height: 200px;
+    margin: 40px 0 0 -30px;
+}
+.caixa h4{
+    color: gray;
+    margin: 20px;
+    margin-top: 16 px;
+    position: absolute;
+    left: -250px;
+}
+#data{
+    margin-top: 15px;
+    position: absolute;
+    left: -150px;
+}
+.caixa-busca1{
+    margin-top: 15px;
+
+}
+.caixa-busca1 button, .caixa-busca2 button{
+    border: none;
+    background-color:#76c010;
+    cursor: pointer;
+}
+
+#caixa1, #caixa2{
+    display: flex;
+    height: 20px;
+}
+
+.mensalidade{
+    color: gray;
+    margin-top: -30px;
+    padding: 30px;  
+    font-size: larger;
+}
+.total{
+  color: gray;
+  margin-top: -25px;
+  position: absolute;
+  left: 360px;
+
+}
+.form-new{
+    margin-top: -80px;
+    display: flex;
+    gap: 30px;
+    margin: 70px 0 0 -505px;
+}
+
+.form-new2{
+    position: absolute;
+    left: -172px;
+    display: flex;
+    gap: 30px; 
+}
+.caixa2{
+    position: absolute;
+    left: -200px;
+}
+
+.botoes{
+    margin: -90px;
+    top: 20px;
+    display: flex;
+    position: relative;
+    left: 300px;
+    margin-top: 100px;
+   
+}
+.botao-relatorio{
+    padding: 15px 30px;
+    position: relative;
+    top: 20px;
+    right: 800px;
+    cursor: pointer;
+}
+.botao-historico{
+    padding: 15px 30px; 
+    position: relative;
+    top: 20px;
+    right: 700px;
+    cursor: pointer;
+}
+#relatorios-projetados li {
+    color: black;
+    position: relative;
+    top: 40px;
+    left: -360px;
+}
+
+ </style>
+</head> 
+<body> 
+
+    
+    <img id="logo" src="logo.png/imagens/image.png" alt="logo.png" width="40px">
+    <br><br>
+  
+
+    <header>     
+        <nav>
+            <h1> RELATÓRIO FINANCEIRO </h1>
+            <img id="img-money" src="money.png/image.png" alt="money.png" width="50px">
+        </nav> <br> <br>
+    
+        <nav id="nav2">
+            <h2> Histórico de movimentação</h2>
+        </nav>
+        <br>
+    
+        <div class="quadrado">
+            <div class="form.tudo"> 
+           <h1>DATA</h1> <br>
+            <h2> RELATÓRIO DIÁRIO</h2> 
+            <h3>RELATÓRIO DE MENSALIDADE</h3>
+            <form id="relForm">
+                
+                <div class="form.grupo">
+                    <main>
+                        <label for="relato"></label>
+                        
+                            <label for="filtroinput"></label>
+                            <input type="text" id="filtroinput" placeholder="Buscar relatório" aria-label="Campo para digitar o item de filtro"/> 
+                                <button id="filtro-button" type="button">Filtrar</button>
+                            <div class="resultado-container" id="resultado" style="background-color: #477506;">
+                                <ul id="relatoList" aria-live="polite" aria-relevant="additions removals"></ul>
+                                <div id="noResultado" class="no-resultado" hidden>Nenhuma frase encontrada.</div>
+                            </div>
+                            
+                    </main>
+
+                    <script>
+                          document.getElementById('filtro-button').addEventListener('click', applyFilter);
+                       
+                          function applyFilter() {
+                            const relatoList = document.getElementById('relatoList');
+                            const resultado = document.getElementById('resultado')
+                            const noResultado = document.getElementById('noResultado');
+                            const filtroinput = document.getElementById('filtroinput');
+
+                            const frases = [
+                                "Foi gasto R$500 de fralda e R$200 de alimen...",
+                                "Recebemos 100R$ doados para fralda e ...",
+                            ];
+        
+                            const filterTerm = filtroinput.value.trim().toLowerCase();
+                                relatoList.innerHTML = '';
+                                noResultado.hidden = true;
+                        if (filterTerm === '') {
+                            // Se o termo de filtro estiver vazio, mostra todas as frases
+                            frases.forEach(phrase => {
+                                const li = document.createElement('li');
+                                li.textContent = phrase;
+                                relatoList.appendChild(li);
+                            });
+                            return;
+                        }   
+
+                         const filtered = frases.filter(phrase => phrase.toLowerCase().includes(filterTerm));
+        
+                            if (filtered.length === 0) {
+                                noResultado.hidden = false;
+                            } else {
+                                filtered.forEach(phrase => {
+                                    const li = document.createElement('li');
+                                    li.textContent = phrase;
+                                    relatoList.appendChild(li);
+                                });
+                            }
+                        }
+                    </script><br><br><br>
+                
+                <label for="data"></label>
+                <input type="date" id="DATA">
+                </div> 
+                <div class="form.grupo">
+                    <input id="relato" type="text" placeholder="Informe o relatório" style="border: none; border-bottom: 1px solid black; outline: none; width: 300px; margin-top: 180px; margin-left: -180px;">
+                    <button id="Enviar" type="button">Enviar</button>
+                    <ul id="relatorios-projetados"></ul>
+                </div> 
+                </form> <br> <br>
+                <div id="resul" class="resul" style="display:none; color: black;"></div>
+                
+                <script>
+                    const dataInput = document.getElementById("DATA");
+                    const relatoInput = document.getElementById("relato");
+                    const listaFrases = document.getElementById("relatorios-projetados");
+                    const botaoAdicionar = document.getElementById("Enviar");
+                
+                    let registros = JSON.parse(localStorage.getItem("relatos")) || [];
+
+                    function formatarDataBrasileira(dataISO) {
+                        if (!dataISO) return "Data inválida";
+                        const [ano, mes, dia] = dataISO.split('-');
+                        return `${dia}/${mes}/${ano}`;
+            }
+                    
+                    function atualizarLista() {
+                        listaFrases.innerHTML = ""; 
+                        registros.forEach(registro => {
+                            const li = document.createElement("li");
+                            const dataFormatada = formatarDataBrasileira(registro.data);
+                            li.textContent = `[${registro.data}] - ${registro.texto}`;
+                            listaFrases.appendChild(li);
+
+
+                        });
+                    }
+                            
+                    atualizarLista();
+                    botaoAdicionar.addEventListener("click", function() {
+                        const data = dataInput.value;
+                        const texto = relatoInput.value.trim();
+                
+                        if (data && texto) { 
+                            registros.push({ data, texto });
+                            localStorage.setItem("relatos", JSON.stringify(registros)); 
+                            atualizarLista();
+                
+                            relatoInput.value = "";
+                            dataInput.value = "";
+                        } else {
+                            alert("Preencha a data e o relatório!");
+                        }
+                    });
+                </script>
+
+         <div class="caixa">
+            <div id="linha-vertical"></div>
+                <div class="container">
+                    <h4>ABRIL</h4>
+                <div class="form.box">
+                    <label for="data"></label>
+                    <input type="date" id="data">
+                
+
+                    <div class="caixa-busca1" id="caixa1">
+                        <input type="search" placeholder="BUSCAR NOME" aria-label="Busca">
+                    <button type="submit" style="background-image: url('logo.png/lupa.png/magnifying-glass.png.svg'); background-size: cover; width: 20px; height: 20px; border: none;">
+                    </button> 
+
+                <div class="mensalidade">
+                   <u>R$250,00</u> 
+                </div>
+                <div>
+                    <img id="seta" src="seta.png/caret-circle-right.png.svg" alt="seta.png" style="margin-left: -15px; margin-top: -8px;">
+                <div> 
+               
+                <div class="total">
+                    <u>TOTAL</u>
+                </div>
+            </div>
+                
+                
+<div class="form-new">
+        <div class="form.box">
+        <label for="data"></label>
+        <input type="date" id="data1">
+        </div>
+
+    <div class="nomeCrianca">
+        <textarea type="name" placeholder="Ana Lua Dias">Ana Lua Dias</textarea>
+    </div>  
+    
+    <div class="valor">
+        <textarea type="name" placeholder="R$250,00">R$250,00- PAGO</textarea>
+    </div>
+</div>
+
+<div class="form-new2"> 
+        <div class="form.box"> <br> <br>
+        <label for="DATA"></label> 
+        <input type="date" id="data2"> <br>
+        </div>
+
+    <div class="nameCrianca2"> <br>
+        <textarea type="name" placeholder="Benício Teles Oliveira">Benício Teles Oliveira</textarea>
+    </div>    
+    
+    <div class="valor"> <br>
+        <textarea type="name" placeholder="R$250,00">R$250,00- NÃO PAGO</textarea>
+    </div> 
+</div> <br>
+
+    <div class="container2">
+        <h4>OUTUBRO</h4>
+    <div class="form.box">
+        <label for="data"></label>
+        <input type="date" id="data" style="margin: 15px; margin-right: 80px;">
+    </div>
+
+        <div class="caixa-busca2" id="caixa2" style="position: relative; right: -180px; margin-top: 15px;">
+        <input type="search" placeholder="BUSCAR NOME" aria-label="Busca">
+        <button type="submit" style="background-image: url('logo.png/lupa.png/magnifying-glass.png.svg'); background-size: cover; width: 20px; height: 20px; border: none;">
+        </button>
+
+</div>
+            <div class="botoes">
+                <div class="botao-relatorio" >
+                    <button type="submit" style="background-color: #59C631;width: 200px; height: 100px; border-radius: 20px; font-size: 20px;">RELATÓRIO FINANCEIRO MENSAL</button>
+                </div>
+            <div class="botao-historico">
+                    <button type="submit" style="background-color: #59C631;width: 200px; height: 100px;border-radius: 20px; font-size: 20px;">HISTÓRICO DE MOVIMENTAÇÃO NO ASAS</button>
+                </div>
+            </div>
+</div>
+         
+    </div>
+    </div>
+       
+    </div>
+     <header>   
+
+
+</body>
+</html>
