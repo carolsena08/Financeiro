@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frase na Tela</title>
+</head>
+<body>
+  <label for="frase">Insira a frase:</label>
+  <input type="text" id="frase" name="frase">
+  <button id="adicionar">Adicionar</button>
+  <ul id="frases-projetadas"></ul>
+  <script>
+    const caixaTexto = document.getElementById("frase");
+    const listaFrases = document.getElementById("frases-projetadas");
+    const botaoAdicionar = document.getElementById("adicionar");
+
+    // Carrega as frases do Local Storage (se houver)
+    let frases = JSON.parse(localStorage.getItem("frases")) || [];
+
+    // Atualiza a lista de frases
+    function atualizarLista() {
+      listaFrases.innerHTML = ""; // Limpa a lista
+      frases.forEach(frase => {
+        const li = document.createElement("li");
+        li.textContent = frase;
+        listaFrases.appendChild(li);
+      });
+    }
+
+    // Chama a função para exibir as frases no carregamento da página
+    atualizarLista();
+
+    // Adiciona uma nova frase à lista e ao Local Storage
+    botaoAdicionar.addEventListener("click", function() {
+      const novaFrase = caixaTexto.value.trim(); // Remove espaços em branco
+      if (novaFrase !== "") { // Verifica se a frase não está vazia
+        frases.push(novaFrase);
+        localStorage.setItem("frases", JSON.stringify(frases)); // Salva no Local Storage
+        atualizarLista();
+        caixaTexto.value = ""; // Limpa o input
+      }
+    });
+  </script>
+</body>
+</html>
